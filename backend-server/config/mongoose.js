@@ -12,8 +12,8 @@
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/my_database" , {
-      // useNewUrlParser: true,
+    await mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://fatihProject:19900203@webdevops.s7xwh.mongodb.net/MerStackProjectFatih" , {
+      useNewUrlParser: true,
       // useFindAndModify: true,
     //   useUnifiedTopology: true,
     //   useCreateIndex: true,
