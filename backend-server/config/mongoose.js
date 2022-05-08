@@ -13,7 +13,7 @@
 const connectDB = async () => {
   try {
     await mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/my_database" , {
-      useNewUrlParser: true,
+      // useNewUrlParser: true,
       // useFindAndModify: true,
     //   useUnifiedTopology: true,
     //   useCreateIndex: true,
