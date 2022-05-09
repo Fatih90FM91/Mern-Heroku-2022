@@ -12,7 +12,7 @@
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://fatihProject:19900203@webdevops.s7xwh.mongodb.net/MerStackProjectFatih" , {
+    await mongoose.connect(process.env.MONGODB_URI || process.env.MONGO_URI , {
       useNewUrlParser: true,
       // useFindAndModify: true,
     //   useUnifiedTopology: true,
